@@ -108,28 +108,28 @@
 }
 
 .hero.beranda {
-  background-image: url("assets/background1.png");
+  background-image: url("/assets/background1.png");
 }
 
 .hero.motif {
-  background-image: url("assets/background4.png");
+  background-image: url("/assets/background4.png");
   background-repeat: no-repeat;
   color: #fff;
   overflow: hidden;
 }
 
 .hero.kontak {
-  background-image: url("assets/background5.png");
+  background-image: url("/assets/background5.png");
   color: #561c24; /* Warna teks berbeda */
   min-height: 250px; /* Tinggi minimum berbeda */
 }
 
 .hero.sejarah {
-  background-image: url("assets/background3.jpeg");
+  background-image: url("/assets/background3.jpeg");
 }
 
 .hero.tutorial {
-  background-image: url("assets/background6.jpeg");
+  background-image: url("/assets/background6.jpeg");
 }
 
 .hero .overlay {
@@ -223,7 +223,7 @@ header p {
   padding: 20px;
   margin: 0;
   width: 100%; /* Memastikan lebar penuh */
-  background-image: url("assets/background5.png");
+  background-image: url("/assets/background5.png");
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
@@ -324,7 +324,7 @@ header p {
 .about-section {
   position: relative;
   padding: 50px;
-  background-image: url("assets/pattern1.jpeg");
+  background-image: url("/assets/pattern1.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -378,7 +378,7 @@ header p {
 .batik-section {
   display: flex;
   position: relative;
-  background-image: url(assets/pattern2.jpeg);
+  background-image: url("/assets/pattern2.jpeg");
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -523,7 +523,7 @@ header p {
 
 /* Style dasar untuk Fill 3 */
 .batik-sejarah {
-  background-image: url("assets/background2.jpeg");
+  background-image: url("/assets/background2.jpeg");
   background-size: cover; /* Menyesuaikan ukuran gambar agar menutupi seluruh latar */
   background-position: center; /* Posisi gambar di tengah */
   background-repeat: no-repeat; /* Tidak mengulang gambar */
@@ -612,7 +612,7 @@ header p {
 /* Style dasar untuk Fill 4 */
 .batik-motif {
   padding: 40px 20px;
-  background-image: url(/assets/pattern1.jpeg);
+  background-image: url("/assets/pattern1.jpeg");
   background-size: cover; /* Menyesuaikan ukuran gambar agar menutupi seluruh latar */
   background-position: center; /* Posisi gambar di tengah */
   background-repeat: no-repeat; /* Tidak mengulang gambar */
@@ -966,7 +966,7 @@ h3 {
 
 /* Start: Style dasar untuk Tabel Umum */
 .kategori {
-  background-image: url("assets/background5.png");
+  background-image: url("/assets/background5.png");
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
