@@ -1,0 +1,452 @@
+/* Style dasar untuk Fill 1 */
+.about-section {
+  position: relative;
+  padding: 50px;
+  background-image: url("/assets/pattern1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about-section .container {
+  display: flex; /* Elemen diatur berjajar horizontal */
+  flex-wrap: nowrap; /* Pastikan elemen tetap dalam satu baris */
+  max-width: 1200px; /* Batasi lebar maksimal */
+  gap: 30px; /* Jarak antar elemen */
+  align-items: center; /* Vertikal sejajar */
+  justify-content: space-between; /* Beri jarak antara gambar dan teks */
+}
+
+.about-section .image {
+  flex: 1; /* Gambar mengambil proporsi ruang */
+  max-width: 50%; /* Maksimal setengah lebar */
+  padding: 10px;
+}
+
+.about-section .image img {
+  width: 100%; /* Gambar memenuhi kontainer */
+  height: auto; /* Skalakan gambar secara proporsional */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+}
+
+.about-section .text-container {
+  flex: 1; /* Teks mengambil proporsi ruang */
+  color: black; /* Teks warna hitam */
+  padding: 20px;
+}
+
+.about-section .text-container h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #561c24;
+}
+
+.about-section .text-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.sejarah-section,
+.batik-section {
+  display: flex;
+  position: relative;
+  background-image: url("/assets/pattern2.jpeg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.batik-section .container {
+  background-color: #e8d8c4;
+  padding: 20px;
+  margin: 30px;
+  max-width: 1200px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.batik-section .section-title {
+  font-size: 55px;
+  margin-top: 20px;
+  color: #561c24;
+  text-align: center;
+  font-weight: bold;
+}
+
+.batik-section .text {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* End Style dasar untuk Fill 1 */
+
+/* Style dasar untuk Fill 2 */
+.batik-intro {
+  padding: 60px 20px;
+  background-color: #e8d8c4;
+  border-top: 5px solid #561c24;
+}
+
+.batik-intro .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.batik-intro .section-title {
+  font-size: 50px;
+  color: #561c24;
+  margin-bottom: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.batik-intro .content {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Responsif untuk layar kecil */
+}
+
+.batik-intro .text {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 30px;
+  color: #333;
+  text-align: justify;
+}
+
+.batik-intro .text p {
+  margin-bottom: 15px;
+}
+
+.batik-intro .image {
+  flex: 1;
+  max-width: 600px;
+  padding: 20px;
+  margin: 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.batik-intro .image img {
+  height: 100%;
+  width: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sejarah-section {
+  position: relative;
+  padding: 40px 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Agar responsif di layar kecil */
+  max-width: 1200px; /* Batasi lebar maksimal */
+  gap: 30px; /* Jarak antar elemen */
+  align-items: center; /* Elemen vertikal rata tengah */
+  justify-content: center; /* Elemen horizontal rata tengah */
+  position: relative; /* Di atas overlay */
+}
+
+.container .image {
+  max-width: 542px;
+  padding: 20px;
+}
+
+.container .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+  flex: 1; /* Teks mengambil 1 bagian dari total ruang */
+  color: white; /* Warna teks kontras dengan overlay */
+}
+
+.text-container h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #561c24;
+  text-align: center;
+}
+
+.text-container p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+  text-align: justify;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* End Style dasar untuk Fill 2 */
+
+/* Style dasar untuk Fill 3 */
+.batik-sejarah {
+  background-image: url("/assets/background2.jpeg");
+  background-size: cover; /* Menyesuaikan ukuran gambar agar menutupi seluruh latar */
+  background-position: center; /* Posisi gambar di tengah */
+  background-repeat: no-repeat; /* Tidak mengulang gambar */
+  padding: 50px 25px;
+}
+
+.batik-sejarah .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 30px;
+  background-color: rgba(255, 255, 255, 0.85); /* Background putih transparan */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Jarak antar elemen */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.batik-sejarah .section-title {
+  font-size: 50px;
+  color: #561c24;
+  margin-bottom: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.batik-sejarah .content {
+  display: flex;
+  flex-wrap: wrap; /* Agar responsif di layar kecil */
+  gap: 50px; /* Jarak antar elemen */
+  align-items: center; /* Elemen vertikal rata tengah */
+  justify-content: center;
+  position: relative; /* Untuk memastikan elemen teks berada di atas gambar */
+}
+
+.batik-sejarah .image {
+  flex: 1;
+  max-width: 500px;
+  padding: 30px;
+  background-color: #c7b7a3;
+}
+
+.batik-sejarah .image img {
+  width: 115%;
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.batik-sejarah .text {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  padding: 20px;
+  margin: 30px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column; /* Tata letak vertikal */
+  gap: 20px; /* Jarak antara paragraf dan tombol */
+}
+
+.batik-sejarah .button-wrapper {
+  width: 100%; /* Agar tombol mengambil baris penuh */
+  text-align: left; /* Posisikan tombol di tengah */
+}
+
+.learn-more {
+  display: inline-block; /* Agar terlihat seperti tombol */
+  background-color: #561c24;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #c7b7a3; /* Warna saat hover */
+  transform: translateY(-5px); /* Efek naik */
+}
+/* End Style dasar untuk Fill 3 */
+
+/* Style dasar untuk Fill 4 */
+.batik-motif {
+  padding: 40px 20px;
+  background-image: url("/assets/pattern1.jpeg");
+  background-size: cover; /* Menyesuaikan ukuran gambar agar menutupi seluruh latar */
+  background-position: center; /* Posisi gambar di tengah */
+  background-repeat: no-repeat; /* Tidak mengulang gambar */
+  background-attachment: fixed;
+}
+
+.batik-motif .container {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.batik-motif .section-title {
+  font-size: 50px;
+  color: #561c24;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.batik-motif .motive-item {
+  text-align: center;
+  flex: 1;
+  max-width: 300px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out; /* Efek transisi untuk interaksi */
+}
+
+.batik-motif .motive-item:hover {
+  transform: translateY(-10px); /* Memberikan efek angkat saat hover */
+}
+
+.batik-motif .content {
+  display: flex;
+  flex-wrap: wrap; /* Agar responsif di layar kecil */
+  gap: 50px; /* Jarak antar elemen */
+  align-items: center; /* Elemen vertikal rata tengah */
+  justify-content: space-around;
+  position: relative; /* Untuk memastikan elemen teks berada di atas gambar */
+}
+
+.batik-motif .motive-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.batik-motif .motive-item p {
+  margin-top: 20px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+.batik-motif .button-wrapper {
+  width: 100%; /* Agar tombol mengambil baris penuh */
+  text-align: center; /* Posisikan tombol di tengah */
+}
+
+.batik-motif .learn-more {
+  background-color: #561c24;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.batik-motif .learn-more:hover {
+  background-color: #c7b7a3;
+  transform: translateY(-5px); /* Efek naik saat hover */
+}
+/* End Style dasar untuk Fill 4 */
+
+/* Style dasar untuk Fill 5 */
+.batik-tutorial {
+  padding: 50px;
+  margin: 20px auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #e8d8c4;
+}
+
+.batik-tutorial .section-title {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #561c24;
+  text-align: center;
+  font-weight: bold;
+}
+
+.batik-tutorial .content {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 25px;
+}
+
+.batik-tutorial .images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  width: 100%;
+}
+
+.batik-tutorial .images img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.batik-tutorial .images img:hover {
+  transform: scale(1.05);
+}
+
+.batik-tutorial .text {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.batik-tutorial .button-wrapper {
+  width: 100%; /* Agar tombol mengambil baris penuh */
+  text-align: center; /* Posisikan tombol di tengah */
+}
+
+.batik-tutorial .learn-more {
+  background-color: #561c24;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.batik-tutorial .learn-more:hover {
+  background-color: #c7b7a3;
+  transform: translateY(-5px); /* Efek naik saat hover */
+}
+/* End Style dasar untuk Fill 5 */
