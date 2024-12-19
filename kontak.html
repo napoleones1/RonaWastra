@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RonaWastra</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- font awesome style -->
+    <script
+      src="https://kit.fontawesome.com/4d48a6e8ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Tambahkan dibagian head -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start: Navbar -->
+    <nav class="navbar">
+      <h1>
+        <img src="assets/Logo.png" alt="Logo" class="navbar-logo" />
+        RonaWastra
+      </h1>
+      <div class="container">
+        <ul class="menu">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="sejarah.html">Sejarah Batik</a></li>
+          <li><a href="motif.html">Motif Batik</a></li>
+          <li><a href="tutorial.html">Tutorial Membatik</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End: Navbar -->
+
+    <!-- Start: Hero -->
+    <section class="hero kontak">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Kontak Kami</h2>
+        <p>
+          Hubungi kami untuk informasi lebih lanjut tentang batik dan berbagai
+          layanan kami!
+        </p>
+      </div>
+    </section>
+    <!-- End: Hero -->
+
+    <!-- Start: Kontak -->
+    <main class="contact-section">
+      <aside class="sidebar">
+        <div class="contact-info">
+          <h2>Informasi Kontak</h2>
+          <p>
+            Email:
+            <a href="mailto:RonaWastra@gmaill.com">RonaWastra@gmaill.com</a>
+          </p>
+          <p>Telepon: <a href="tel:+628123456789">+62 812-3456-789</a></p>
+          <p>
+            Media Sosial:
+            <a href="https://facebook.com" target="_blank">Facebook</a>,
+            <a href="https://instagram.com" target="_blank">Instagram</a>,
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+          </p>
+        </div>
+      </aside>
+
+      <form class="contact-form">
+        <h2>Formulir Kontak</h2>
+        <label for="name">Nama</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Masukkan nama Anda"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Masukkan email Anda"
+          required
+        />
+
+        <label for="subject">Subjek</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Masukkan subjek pesan Anda"
+          required
+        />
+
+        <label for="message">Pesan</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Tulis pesan Anda di sini"
+          required
+        ></textarea>
+
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </main>
+    <!-- End: Kontak -->
+
+    <!-- Start: Footer -->
+    <footer class="footer">
+      <div class="footer-header">
+        <h1>
+          <img src="assets/Logo.png" alt="Logo" class="footer-logo" />
+          RonaWastra
+        </h1>
+      </div>
+      <div class="slogan-social">
+        <div class="slogan">Menjaga Tradisi, Merangkai Kreativitas.</div>
+        <div class="social-media">
+          <a href="https://www.instagram.com/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com/?lang=en-id"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+      <p>&copy; 2024 RonaWastra. Semua Hak Dilindungi.</p>
+    </footer>
+    <!-- End: Footer -->
+  </body>
+  <script src="js/script.js"></script>
+</html>

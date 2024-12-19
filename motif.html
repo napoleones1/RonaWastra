@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RonaWastra</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- font awesome style -->
+    <script
+      src="https://kit.fontawesome.com/4d48a6e8ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Tambahkan dibagian head -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start: Navbar -->
+    <nav class="navbar">
+      <h1>
+        <img src="assets/Logo.png" alt="Logo" class="navbar-logo" />
+        RonaWastra
+      </h1>
+      <div class="container">
+        <ul class="menu">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="sejarah.html">Sejarah Batik</a></li>
+          <li><a href="motif.html">Motif Batik</a></li>
+          <li><a href="tutorial.html">Tutorial Membatik</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End: Navbar -->
+
+    <!-- Start: Hero -->
+    <section class="hero motif">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Motif Batik Indonesia</h2>
+        <p>Jelajahi berbagai motif batik berdasarkan ragam kategori.</p>
+      </div>
+    </section>
+    <!-- End: Hero -->
+
+    <!-- Start: Kategori Berdasarkan Asal Daerah -->
+    <section class="kategori" id="kategori-daerah">
+      <h2>Berdasarkan Asal Daerah dan Filosofinya</h2>
+      <div class="overlay"></div>
+      <table class="batik-table daerah">
+        <thead>
+          <tr>
+            <th>Gambar</th>
+            <th>Nama Motif</th>
+            <th>Asal Daerah</th>
+            <th>Deskripsi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="assets/batik parang.jpeg" alt="Motif Parang" /></td>
+            <td>Motif Parang</td>
+            <td>Yogyakarta, Jawa Tengah</td>
+            <td>
+              Motif Parang adalah salah satu motif tertua di Indonesia. Polanya
+              berupa garis diagonal menyerupai ombak laut yang melambangkan
+              kekuatan, keteguhan, dan keberanian dalam menghadapi tantangan.
+              Motif ini sering digunakan oleh keluarga kerajaan karena
+              melambangkan kekuasaan dan kewibawaan.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="assets/batik mega mendung.jpeg"
+                alt="Motif Mega Mendung"
+              />
+            </td>
+            <td>Motif Mega Mendung</td>
+            <td>Cirebon, Jawa Barat</td>
+            <td>
+              Batik Mega Mendung memiliki pola unik berupa awan berlapis-lapis
+              dengan gradasi warna. Filosofinya melambangkan ketenangan,
+              kesabaran, dan kesejukan dalam kehidupan. Motif ini dipengaruhi
+              oleh budaya Tiongkok karena Cirebon merupakan daerah pelabuhan
+              dengan interaksi budaya yang kuat.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="assets/batik cendrawasih.jpeg"
+                alt="Motif Cendrawasih"
+              />
+            </td>
+            <td>Motif Cendrawasih</td>
+            <td>Papua</td>
+            <td>
+              Motif Cendrawasih terinspirasi dari burung Cendrawasih, burung
+              langka yang hanya ditemukan di Papua. Filosofinya melambangkan
+              keindahan, keanggunan, dan keluhuran budaya Papua.
+            </td>
+          </tr>
+          <tr>
+            <td><img src="assets/batik kawung.jpeg" alt="Motif Kawung" /></td>
+            <td>Motif Kawung</td>
+            <td>Yogyakarta, Jawa Tengah</td>
+            <td>
+              Motif Kawung memiliki pola geometris menyerupai buah kawung atau
+              kolang-kaling. Motif ini melambangkan kesucian, kemurnian, dan
+              harapan agar pemakainya selalu menjaga hati dan pikirannya. Batik
+              Kawung sering digunakan oleh para pejabat kerajaan.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="assets/batik sidomukti.jpeg" alt="Motif Sidomukti" />
+            </td>
+            <td>Motif Sidomukti</td>
+            <td>Surakarta (Solo), Jawa Tengah</td>
+            <td>
+              Motif Sidomukti digunakan pada acara pernikahan adat Jawa.
+              Filosofinya melambangkan harapan kehidupan yang sejahtera, mulia,
+              dan penuh kebahagiaan. Batik ini identik dengan warna soga
+              (cokelat keemasan).
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="assets/batik tujuh rupa.jpg" alt="Motif Tujuh Rupa" />
+            </td>
+            <td>Motif Tujuh Rupa</td>
+            <td>Pekalongan, Jawa Tengah</td>
+            <td>
+              Batik Tujuh Rupa dikenal dengan motif yang terinspirasi dari alam,
+              seperti bunga, daun, burung, dan hewan lainnya. Batik ini
+              dipengaruhi oleh budaya Tionghoa karena Pekalongan merupakan kota
+              perdagangan yang terbuka terhadap budaya asing.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="assets/batik gentongan.jpeg" alt="Motif Gentongan" />
+            </td>
+            <td>Motif Gentongan</td>
+            <td>Madura, Jawa Timur</td>
+            <td>
+              Batik Gentongan memiliki warna-warna cerah seperti merah, kuning,
+              hijau, dan biru. Nama "gentongan" diambil dari proses pewarnaan
+              batik yang menggunakan gentong (wadah tanah liat). Motif ini
+              melambangkan keceriaan dan keberanian.
+            </td>
+          </tr>
+          <tr>
+            <td><img src="assets/batik lasem.jpeg" alt="Motif Lasem" /></td>
+            <td>Motif Lasem</td>
+            <td>Lasem, Rembang, Jawa Tengah</td>
+            <td>
+              Batik Lasem memiliki warna merah terang yang khas, disebut "abang
+              getih pithik" (merah darah ayam). Pengaruh Tiongkok sangat kuat
+              dalam motif ini, dengan pola naga, burung phoenix, bunga, dan
+              awan.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="assets/batik priyangan.jpeg" alt="Motif Priyangan" />
+            </td>
+            <td>Motif Priyangan</td>
+            <td>Tasikmalaya, Jawa Barat</td>
+            <td>
+              Motif Priyangan memiliki corak yang halus dan sederhana,
+              seringkali terinspirasi oleh bunga-bungaan dan tanaman. Motif ini
+              menggambarkan ketenangan dan keanggunan masyarakat Sunda.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="assets/batik singo barong.jpeg"
+                alt="Motif Singo Barong"
+              />
+            </td>
+            <td>Motif Singo Barong</td>
+            <td>Banyuwangi, Jawa Timur</td>
+            <td>
+              Motif Singo Barong menampilkan corak singa atau makhluk mitologis
+              yang melambangkan kekuatan, keberanian, dan kewibawaan. Motif ini
+              juga mencerminkan kearifan lokal masyarakat Osing di Banyuwangi.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="assets/batik sekar jagad.jpeg"
+                alt="Motif Sekar Jagad"
+              />
+            </td>
+            <td>Motif Sekar Jagad</td>
+            <td>Solo dan Yogyakarta</td>
+            <td>
+              Motif Sekar Jagad memiliki pola menyerupai peta dunia (jagad).
+              Filosofinya adalah keindahan yang menyatukan perbedaan budaya,
+              serta melambangkan keanekaragaman dan harmoni.
+            </td>
+          </tr>
+          <tr>
+            <td><img src="assets/batik simbut.jpeg" alt="Motif Simbut" /></td>
+            <td>Motif Simbut</td>
+            <td>Banten</td>
+            <td>
+              Motif Simbut terinspirasi dari daun talas yang melambangkan
+              kesederhanaan dan kebersahajaan hidup masyarakat Banten.
+            </td>
+          </tr>
+          <tr>
+            <td><img src="assets/batik truntum.jpeg" alt="Motif Truntum" /></td>
+            <td>Motif Truntum</td>
+            <td>Banten</td>
+            <td>
+              Motif ini memiliki pola bintang-bintang kecil yang tersebar
+              menyerupai titik-titik bunga atau cahaya. Motif Truntum
+              melambangkan cinta yang tumbuh kembali. Biasanya digunakan dalam
+              acara pernikahan oleh orang tua mempelai sebagai simbol restu dan
+              cinta yang tulus.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- End: Kategori Berdasarkan Asal Daerah -->
+
+    <!-- Start: Kategori Berdasarkan Fungsi -->
+    <section class="kategori" id="kategori-fungsi">
+      <h2>Berdasarkan Fungsi</h2>
+      <table class="batik-table fungsi">
+        <thead>
+          <tr>
+            <th>Gambar</th>
+            <th>Nama Motif</th>
+            <th>Fungsi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="assets/batik sawat.jpeg" alt="Motif Sawat" /></td>
+            <td>Motif Sawat</td>
+            <td>
+              Digunakan dalam upacara kebesaran dan acara resmi kerajaan,
+              melambangkan kekuasaan dan kewibawaan.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="assets/batik sidomulyo.jpeg" alt="Motif Sidomulyo" />
+            </td>
+            <td>Motif Sidomulyo</td>
+            <td>Digunakan dalam pernikahan, melambangkan kemuliaan hidup.</td>
+          </tr>
+          <tr>
+            <td><img src="assets/batik lereng.jpeg" alt="Motif Lereng" /></td>
+            <td>Motif Lereng</td>
+            <td>
+              Digunakan untuk pakaian sehari-hari karena memiliki desain
+              sederhana namun tetap elegan. Melambangkan ketekunan dan makna
+              kehidupan yang penuh perjuangan.
+            </td>
+          </tr>
+          <tr>
+            <td><img src="assets/batik cuwiri.jpeg" alt="Motif Cuwiri" /></td>
+            <td>Motif Cuwiri</td>
+            <td>
+              Dipakai dalam acara mitoni (upacara tujuh bulan kehamilan) sebagai
+              simbol harapan akan keselamatan dan keberuntungan bayi yang akan
+              lahir.
+            </td>
+          </tr>
+          <tr>
+            <td><img src="assets/batik tambal.jpeg" alt="Motif Tambal" /></td>
+            <td>Motif Tambal</td>
+            <td>
+              Sering digunakan dalam upacara penyembuhan dan sebagai doa harapan
+              untuk pemulihan dari sakit atau masalah hidup.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="assets/batik ratu ratih.jpeg" alt="Motif Ratu Ratih" />
+            </td>
+            <td>Motif Batik Ratu Ratih</td>
+            <td>
+              Motif ini sering digunakan dalam acara adat sebagai simbol
+              kecantikan dan kelembutan. Melambangkan keindahan dan keanggunan
+              seorang perempuan.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- End: Kategori Berdasarkan Fungsi -->
+
+    <!-- Start: Footer -->
+    <footer class="footer">
+      <div class="footer-header">
+        <h1>
+          <img src="assets/Logo.png" alt="Logo" class="footer-logo" />
+          RonaWastra
+        </h1>
+      </div>
+      <div class="slogan-social">
+        <div class="slogan">Menjaga Tradisi, Merangkai Kreativitas.</div>
+        <div class="social-media">
+          <a href="https://www.instagram.com/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com/?lang=en-id"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+      <p>&copy; 2024 RonaWastra. Semua Hak Dilindungi.</p>
+    </footer>
+    <!-- End: Footer -->
+  </body>
+</html>
