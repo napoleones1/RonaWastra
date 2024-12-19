@@ -6,91 +6,97 @@
 }
 
 /* Style dasar untuk navbar */
+/* Style dasar untuk navbar */
 .navbar {
   background-color: #561c24;
   padding: 15px 10px;
-  position: sticky; /* Menjadikan navbar tetap terlihat ketika di-scroll */
-  top: 0; /* Menjaga navbar tetap di atas */
-  z-index: 1000; /* Memastikan navbar tetap di atas elemen lainnya saat di-scroll */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar h1 {
   color: #e8d8c4;
   font-size: 30px;
-  text-align: center;
-  display: flex; /* Menjadikan h1 fleksibel untuk menata logo dan teks */
-  align-items: center; /* Memastikan teks dan logo sejajar vertikal */
-  justify-content: center; /* Memusatkan isi h1 secara horizontal */
+  display: flex;
+  align-items: center;
 }
 
 .navbar-logo {
-  width: 70px; /* Ukuran logo */
-  height: auto; /* Menjaga rasio gambar */
+  width: 70px;
+  height: auto;
+  margin-right: 10px;
 }
 
-.navbar .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center; /* Menyusun konten di tengah */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
 }
 
+/* Menu */
 .menu {
-  list-style-type: none; /* Menghilangkan bullet pada daftar */
-  display: flex; /* Mengatur menu dalam baris */
-  justify-content: center; /* Menempatkan menu di tengah */
-  gap: 10px; /* Jarak antar menu */
-}
-
-.menu li {
-  display: inline-block;
+  list-style-type: none;
+  display: flex; /* Default: menu horizontal */
+  gap: 20px;
 }
 
 .menu li a {
   color: #fff;
-  text-decoration: none; /* Menghilangkan garis bawah */
+  text-decoration: none;
   font-size: 15px;
-  padding: 5px 10px; /* Padding di dalam link */
-  transition: background-color 0.3s; /* Efek transisi untuk hover */
+  padding: 5px 10px;
+  transition: background-color 0.3s;
 }
 
 .menu li a:hover {
-  background-color: #e8d8c4; /* Warna latar belakang saat hover */
-  color: #561c24; /* Warna teks saat hover */
-  border-radius: 5px; /* Membulatkan sudut */
+  background-color: #e8d8c4;
+  color: #561c24;
+  border-radius: 5px;
 }
 
-/* Responsif untuk layar dengan lebar 768px atau lebih kecil (Tablet dan Mobile) */
-
-/* Navbar */
-@media (max-width: 768px) {
-  .navbar .container {
-    width: 100%;
-    padding: 0 10px;
-  }
-
-  .menu {
-    flex-direction: column; /* Menyusun menu vertikal */
-    gap: 15px;
-  }
-
-  .navbar h1 {
-    font-size: 25px; /* Mengurangi ukuran font pada h1 */
-  }
-  .contact-section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sidebar {
-    width: 100%;
-  }
-
-  .contact-form {
-    width: 100%;
-  }
+/* Tombol hamburger (disembunyikan secara default) */
+.hamburger {
+  display: none; /* Default: tidak tampil */
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  z-index: 1100;
 }
-/* End Style dasar untuk Navbar */
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #e8d8c4;
+  transition: all 0.3s ease;
+}
+
+/* Ubah tombol hamburger menjadi X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 10px;
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 10px;
+}
 
 /* Style dasar untuk Hero */
 .hero {
@@ -1203,15 +1209,30 @@ h3 {
 
 /* Responsif untuk layar dengan lebar 768px atau lebih kecil (Tablet dan Mobile) */
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .navbar .container {
     width: 100%;
     padding: 0 10px;
   }
 
   .menu {
-    flex-direction: column; /* Menyusun menu vertikal */
-    gap: 15px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #561c24;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
   }
 
   .navbar h1 {
@@ -1509,26 +1530,26 @@ h3 {
   /* Style untuk gallery */
   .gallery {
     padding: 10px;
-    gap: 20px;
+    gap: 15px; /* Mengurangi gap antar elemen */
   }
 
   /* Style untuk gallery-item */
   .gallery-item {
     width: 100%; /* Lebar penuh untuk gallery item */
     height: auto; /* Menyesuaikan tinggi secara otomatis */
-    padding: 15px; /* Mengurangi padding */
+    padding: 10px; /* Mengurangi padding lebih lanjut */
     box-shadow: none; /* Menghilangkan bayangan untuk tampilan lebih sederhana */
   }
 
   .gallery-item h2 {
-    font-size: 28px; /* Ukuran font judul lebih kecil */
+    font-size: 24px; /* Ukuran font judul lebih kecil */
     margin-bottom: 10px; /* Mengurangi margin */
   }
 
   .gallery-item p {
-    font-size: 16px; /* Ukuran font paragraf lebih kecil */
-    margin-left: 20px; /* Mengurangi margin */
-    margin-right: 20px;
+    font-size: 14px; /* Ukuran font paragraf lebih kecil */
+    margin-left: 15px; /* Mengurangi margin */
+    margin-right: 15px;
   }
 
   /* Gallery images */
@@ -1536,41 +1557,41 @@ h3 {
     display: grid;
     grid-template-columns: repeat(
       auto-fit,
-      minmax(150px, 1fr)
-    ); /* Membuat gambar responsif dalam grid */
+      minmax(120px, 1fr)
+    ); /* Membuat gambar dalam grid lebih kecil */
     justify-content: center;
-    gap: 10px;
+    gap: 8px; /* Mengurangi jarak antar gambar */
   }
 
   .gallery-image {
-    width: 100%; /* Membuat gambar lebar penuh */
+    width: 100%; /* Gambar mengambil lebar penuh kontainer */
     height: auto;
   }
 
   /* Gallery item lokasi */
   .gallery-item-lokasi {
     width: 100%; /* Lebar penuh untuk lokasi */
-    padding: 20px;
+    padding: 15px; /* Mengurangi padding untuk lokasi */
   }
 
   .location-grid {
     grid-template-columns: repeat(
       auto-fit,
-      minmax(200px, 1fr)
-    ); /* Grid lokasi lebih responsif */
-    gap: 10px;
+      minmax(180px, 1fr)
+    ); /* Grid lokasi lebih kecil */
+    gap: 8px;
   }
 
   .location h3 {
-    font-size: 20px; /* Ukuran font lebih kecil untuk lokasi */
+    font-size: 18px; /* Ukuran font lebih kecil untuk judul lokasi */
   }
 
   .location p {
-    font-size: 16px; /* Ukuran font paragraf lebih kecil */
+    font-size: 14px; /* Ukuran font paragraf lebih kecil */
   }
 
   .location-image {
-    width: 100%; /* Gambar lokasi lebar penuh */
+    width: 100%; /* Gambar lokasi mengambil lebar penuh */
     height: auto;
   }
   .footer {
