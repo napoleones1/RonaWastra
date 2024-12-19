@@ -108,28 +108,28 @@
 }
 
 .hero.beranda {
-  background-image: url("/assets/background1.png");
+  background-image: url("assets/background1.png");
 }
 
 .hero.motif {
-  background-image: url("/assets/background4.png");
+  background-image: url("assets/background4.png");
   background-repeat: no-repeat;
   color: #fff;
   overflow: hidden;
 }
 
 .hero.kontak {
-  background-image: url("/assets/background5.png");
+  background-image: url("assets/background5.png");
   color: #561c24; /* Warna teks berbeda */
   min-height: 250px; /* Tinggi minimum berbeda */
 }
 
 .hero.sejarah {
-  background-image: url("/assets/background3.jpeg");
+  background-image: url("assets/background3.jpeg");
 }
 
 .hero.tutorial {
-  background-image: url("/assets/background6.jpeg");
+  background-image: url("assets/background6.jpeg");
 }
 
 .hero .overlay {
@@ -223,7 +223,7 @@ header p {
   padding: 20px;
   margin: 0;
   width: 100%; /* Memastikan lebar penuh */
-  background-image: url("/assets/background5.png");
+  background-image: url("assets/background5.png");
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
@@ -324,7 +324,7 @@ header p {
 .about-section {
   position: relative;
   padding: 50px;
-  background-image: url("/assets/pattern1.jpeg");
+  background-image: url("assets/pattern1.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -378,7 +378,7 @@ header p {
 .batik-section {
   display: flex;
   position: relative;
-  background-image: url(/assets/pattern2.jpeg);
+  background-image: url(assets/pattern2.jpeg);
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -523,7 +523,7 @@ header p {
 
 /* Style dasar untuk Fill 3 */
 .batik-sejarah {
-  background-image: url("/assets/background2.jpeg");
+  background-image: url("assets/background2.jpeg");
   background-size: cover; /* Menyesuaikan ukuran gambar agar menutupi seluruh latar */
   background-position: center; /* Posisi gambar di tengah */
   background-repeat: no-repeat; /* Tidak mengulang gambar */
@@ -966,7 +966,7 @@ h3 {
 
 /* Start: Style dasar untuk Tabel Umum */
 .kategori {
-  background-image: url("/assets/background5.png");
+  background-image: url("assets/background5.png");
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
@@ -1506,58 +1506,72 @@ h3 {
   h3 {
     font-size: 18px; /* Kurangi ukuran font */
   }
+  /* Style untuk gallery */
   .gallery {
-    gap: 20px;
     padding: 10px;
+    gap: 20px;
   }
 
+  /* Style untuk gallery-item */
   .gallery-item {
-    width: 90%; /* Sesuaikan agar pas di layar kecil */
-    height: auto; /* Biarkan tinggi menyesuaikan konten */
-    padding: 15px;
+    width: 100%; /* Lebar penuh untuk gallery item */
+    height: auto; /* Menyesuaikan tinggi secara otomatis */
+    padding: 15px; /* Mengurangi padding */
+    box-shadow: none; /* Menghilangkan bayangan untuk tampilan lebih sederhana */
   }
 
   .gallery-item h2 {
-    font-size: 32px; /* Kurangi ukuran font */
+    font-size: 28px; /* Ukuran font judul lebih kecil */
+    margin-bottom: 10px; /* Mengurangi margin */
   }
 
   .gallery-item p {
-    font-size: 16px;
-    margin-left: 15px;
-    margin-right: 15px;
+    font-size: 16px; /* Ukuran font paragraf lebih kecil */
+    margin-left: 20px; /* Mengurangi margin */
+    margin-right: 20px;
   }
 
+  /* Gallery images */
   .gallery-images {
-    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(150px, 1fr)
+    ); /* Membuat gambar responsif dalam grid */
+    justify-content: center;
+    gap: 10px;
   }
 
   .gallery-image {
-    width: 45%; /* Gambar lebih kecil agar sesuai dengan layar */
+    width: 100%; /* Membuat gambar lebar penuh */
+    height: auto;
   }
 
+  /* Gallery item lokasi */
   .gallery-item-lokasi {
-    width: 100%; /* Lebar penuh untuk layar kecil */
+    width: 100%; /* Lebar penuh untuk lokasi */
     padding: 20px;
   }
 
   .location-grid {
     grid-template-columns: repeat(
       auto-fit,
-      minmax(150px, 1fr)
-    ); /* Sesuaikan kolom lebih kecil */
+      minmax(200px, 1fr)
+    ); /* Grid lokasi lebih responsif */
     gap: 10px;
   }
 
   .location h3 {
-    font-size: 20px;
+    font-size: 20px; /* Ukuran font lebih kecil untuk lokasi */
   }
 
   .location p {
-    font-size: 16px;
+    font-size: 16px; /* Ukuran font paragraf lebih kecil */
   }
 
   .location-image {
-    width: 60%; /* Gambar lebih kecil di layar kecil */
+    width: 100%; /* Gambar lokasi lebar penuh */
+    height: auto;
   }
   .footer {
     padding: 15px; /* Kurangi padding untuk layar kecil */
